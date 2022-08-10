@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estylos.css/index.css">
+    <title>contacto</title>
+</head>
+<body>
+    <header>
+    <img src="../imagenes/logo.PNG" class="anchoLogo" alt="imagen logo">
+    <nav>
+        <ul>
+            <li><a href="../index.html">inicio</a></li>
+            <li><a href="productos.html">productos</a></li>
+            <li><a href="nosotros.html">nosotros</a></li>
+            <li><a href="contacto.html">contacto</a></li>
+        </ul>
+    </nav>
+    </header>
+    <hr>
+
+
+    <main class="mainContacto">
+        <fieldset>
+            <legend>info personal usuario</legend>
+                <form action="rutaalarchivodondevalainfo">
+                <label for="name">nombre:</label>
+                <input type="text" name="nombre"><br>
+                <label for="correo">email:</label>
+                <input type="email" name="correo"><br>
+                <label for="contraseña">password:</label>
+                <input type="password" name="contraseña">
+                <br>
+                <label for="comentarios">comentarios:</label><br>
+                <textarea name="comentarios"  cols="50" rows="5"></textarea>
+            <section>
+                <h2 class="generoContacto">genero</h2>
+                <span>hombre</span>
+                <input type="radio" name="sexo" value="hombre">
+                <span>mujer</span>
+                <input type="radio" name="sexo" value="mujer">
+                <span>no binario</span>
+                <input type="radio" name="sexo" value="no binario">
+                </section>
+        <article class="medidaContacto">
+            <select name="altura"altura>
+                <option value="">medida</option>
+                <option value="1,75">1,75</option>
+                <option value="1,80">1,80</option>
+                <option value="1,85">1,85</option>
+                <option value="1,90">1,90</option>
+            </select>
+        </article>
+            </fieldset>
+            <span>acepto terminos y condiciones</span>
+            <input type="checkbox" name="acepta" value="1">
+            <br>
+            <br>
+            
+            
+            
+
+            <input type="submit" value="enviar formulario">
+            <input type="reset" value="limpiar casillas">
+            <input type="button" value="sin acciones">
+
+
+
+
+
+        </form>
+
+    </main>
+    
+    <footer>
+        <p>desarrollado por TREFLIPSSKATEBOARDS</p>
+    </footer>
+</body>
+</html>

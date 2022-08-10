@@ -1,0 +1,484 @@
+/*partes generales*/
+* {
+    margin: 0%;
+    padding: 0%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif; }
+img {
+        width: 50%;
+        height: 40vh;
+    }
+/*partes del header*/
+header {
+    display: flex;
+    flex-direction: row;
+    height: 35vh;
+    justify-content: space-between;
+    align-items: center;
+
+}
+h1 {
+    background-color: rgb(164, 163, 163);
+    color: rgb(163, 25, 25);
+    text-align: center;
+    font-size: 3rem;
+    
+}
+
+h2 {
+    color: white;
+    background-color: black;
+    width: 90%;
+    height: 5vh;
+}
+h3 {
+    color: white;
+    background-color: black;
+    width: 30%;
+    height: 5vh;
+}
+li a {
+    color: white;
+    background-color: brown;
+    padding: 5px 25px;
+
+}
+li {
+    color: gray;
+    font-size: x-large;
+    padding: 5px 20px;
+    border-radius: 3px;
+
+}
+section {
+    width: 60%;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    background-color: black;
+    justify-content: space-between;
+}
+
+/*partes del footer*/
+footer {
+    display: flex;
+    flex-direction: end;
+    justify-content: end;
+    color: rgb(241, 236, 236);
+    background-color: black;
+
+}
+
+/*clases generales*/
+.anchoLogo {
+    width: 24%;
+    height: 27vh;
+    
+}
+/*html index*/
+.mainIndex {
+    display: grid;
+    grid-template-areas: 
+    "imagen1    imagen1   imagen1"
+    "imagen2    imagen3   imagen4"
+    "imagen5    imagen6   imagen7";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px 300px 300px;
+    text-align: center;
+    background-color: black;
+}
+
+.imagen1 {
+    grid-area: imagen1;
+    width: 100%;
+}
+.imagen2 {
+    grid-area: imagen2;
+}
+.imagen3 {
+    grid-area: imagen3;
+}
+.imagen4 {
+    grid-area: imagen4;
+}
+.imagen5 {
+    grid-area: imagen5;
+}
+.imagen6 {
+    grid-area: imagen6;
+}
+.imagen7 {
+    grid-area: imagen7;
+}
+.subMenuColumna {
+    display: flex;
+    flex-direction: column;
+    font-size: x-small;
+    color: rgb(233, 225, 225);
+
+}
+
+/*html nosotros*/
+.mainNosotros {
+    display: grid;
+    grid-template-areas:
+    "titulo      titulo    titulo" 
+    "  video      video    video"
+    "mapa  fotoMauro  fotoTobias ";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70px 430px 500px;
+    text-align: center;
+}
+.titulo {
+    grid-area: titulo;
+}
+.video {
+    grid-area: video;
+    width: 100%;
+    height: 60vh;
+}
+.mapa {
+    grid-area: mapa;
+}
+.fotoMauro {
+    grid-area: fotoMauro;
+}
+.fotoTobias {
+    grid-area: fotoTobias;
+}
+.medidaFotoNosotros {
+    width: 300px;
+    height: 40vh;
+}
+.h3Nosotros {
+    margin-left: 480px; 
+}
+/**html productos**/
+.mainProductos {
+    display: grid;
+    grid-template-areas:
+    "titulo titulo" 
+    "tablas trucks"
+    "ruedas zapatillas"
+    "lijas   lijas";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 300px 300px 300px;
+}
+.titulo {
+    grid-area: titulo;
+}
+.tablas {
+    grid-area: tablas;
+}
+.trucks {
+    grid-area: trucks;
+}
+.ruedas {
+    grid-area: ruedas;
+}
+.zapatillas {
+    grid-area: zapatillas;
+}
+.lijas {
+    grid-area: lijas;
+}
+.productosCentrado {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(84, 76, 76);
+}
+.producto {
+    display: flex;
+    flex-direction: column;
+    color: blanchedalmond;
+    background-color: rgb(33, 31, 31);
+    text-align: center;
+    margin: 10px;
+}
+
+/*html contacto*/
+
+.mainContacto {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(145, 0, 0);
+    width: 100%;
+    align-items: center;
+}
+.generoContacto {
+    text-align: center;
+    font-size: 1rm;
+    background-color: rgb(210, 19, 19);
+    height: 5vh;
+}
+.medidaContacto {
+    display: flex;
+    flex-direction: row;
+    text-align: end;
+    justify-content: end;
+}
+
+/*mediaq*/
+
+
+@media (min-width:1024px) {
+    .mainIndex {
+        display: grid;
+        grid-template-areas: 
+        "imagen1    imagen1   imagen1"
+        "imagen2    imagen3   imagen4"
+        "imagen5    imagen6   imagen7";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 350px 300px 300px;
+        text-align: center;
+        background-color: black;
+    }
+
+}
+@media (min-width:700px) and (max-width:1023px) {
+    .mainIndex {
+        display: grid;
+        grid-template-areas: 
+        "imagen1    imagen1   "
+        "imagen2    imagen3   "
+        "imagen4    imagen5   "
+        "imagen6    imagen7   ";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 300px 300px 300px;
+        text-align: center;
+        background-color: black;
+    }
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .anchoLogo {
+        width: 50%;
+        height: 30vh;
+        
+    }
+
+
+}
+@media (max-width:699px) 
+{
+
+    .mainIndex {
+        display: grid;
+        grid-template-areas: 
+        "imagen1  "
+        "imagen2  "
+        "imagen3  "
+        "imagen4  "
+        "imagen5  "
+        "imagen6  "
+        "imagen7  ";
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px;
+        text-align: center;
+        background-color: black;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        height: 45vh;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        background-color: black;
+    }
+    li a {
+        color: rgb(1, 0, 0);
+        background-color: rgb(214, 29, 29);
+        padding: 5px 25px;
+    
+    }
+    .anchoLogo {
+        margin-left: 10px;
+        width: 43%;
+        height: 35vh;
+        
+    }
+
+}
+
+@media (min-width:1024px) {
+    .mainProductos {
+        display: grid;
+        grid-template-areas:
+        "titulo titulo" 
+        "tablas trucks"
+        "ruedas zapatillas"
+        "lijas   lijas";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 300px 300px 300px;
+    }
+    .anchoLogo {
+        width: 24%;
+        height: 27vh;
+        
+    }
+
+}
+@media (min-width:700px) and (max-width:1023px) {
+
+    .mainProductos {
+        display: grid;
+        grid-template-areas:
+        "titulo titulo" 
+        "trucks trucks"
+        "tablas tablas"
+        "ruedas zapatillas"
+        "lijas   lijas";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 300px 300px 300px 300px;
+    }
+
+}
+
+@media (max-width:699px) {
+    .mainProductos {
+        display: grid;
+        grid-template-areas:
+        "titulo " 
+        "tablas "
+        "trucks"
+        "ruedas "
+        "zapatillas"
+        "lijas  ";
+        grid-template-columns: 1fr ;
+        grid-template-rows: 100px 300px 300px 300px 300px 300px;
+    }
+
+}
+@media (min-width:1024px) {
+    .mainNosotros {
+        display: grid;
+        grid-template-areas:
+        "titulo      titulo    titulo" 
+        "  video      video    video"
+        "mapa  fotoMauro  fotoTobias ";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 70px 430px 500px;
+        text-align: center;
+    }
+}
+@media (min-width:700px) and (max-width:1023px) {
+    .mainNosotros {
+        display: grid;
+        grid-template-areas:
+        "titulo      titulo  " 
+        "  video      video   "
+        "fotoMauro  fotoTobias "
+        "mapa        mapa    ";
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 120px 430px 340px 300px;
+        text-align: center;
+    }
+}
+@media (max-width:699px) {
+    .mainNosotros {
+        display: grid;
+        grid-template-areas:
+        "titulo  " 
+        "  video "
+        "fotoMauro"
+        "fotoTobias"
+        "   mapa   ";
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px 430px 340px 340px 300px;
+        text-align: center;
+    }
+}
+@media (min-width:1024px) {
+    .mainContacto {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(145, 0, 0);
+        width: 100%;
+        align-items: center;
+    }
+    .generoContacto {
+        text-align: center;
+        font-size: 1rm;
+        background-color: rgb(210, 19, 19);
+        height: 5vh;
+    }
+    .medidaContacto {
+        display: flex;
+        flex-direction: row;
+        text-align: end;
+        justify-content: end;
+    }
+}
+@media (min-width:700px) and (max-width:1023px) {
+    .mainContacto {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(145, 0, 0);
+        width: 100%;
+        align-items: center;
+    }
+    .generoContacto {
+        text-align: center;
+        font-size: 1rm;
+        background-color: rgb(210, 19, 19);
+        height: 5vh;
+    }
+    .medidaContacto {
+        display: flex;
+        flex-direction: row;
+        text-align: end;
+        justify-content: end;
+    }
+}
+@media (max-width:699px) {
+    .mainContacto {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(145, 0, 0);
+        width: 100%;
+        align-items: center;
+    }
+    .generoContacto {
+        text-align: center;
+        font-size: 1rm;
+        background-color: rgb(210, 19, 19);
+        height: 5vh;
+    }
+    .medidaContacto {
+        display: flex;
+        flex-direction: row;
+        text-align: end;
+        justify-content: end;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
