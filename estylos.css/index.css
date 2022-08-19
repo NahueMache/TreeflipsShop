@@ -42,7 +42,6 @@ h3 {
 }
 li a {
     color: white;
-    background-color: brown;
     padding: 5px 25px;
 
 }
@@ -51,8 +50,8 @@ li {
     font-size: x-large;
     padding: 5px 20px;
     border-radius: 3px;
-
 }
+
 section {
     width: 60%;
 }
@@ -60,7 +59,7 @@ ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    background-color: black;
+    /*background-color: black;*/
     justify-content: space-between;
 }
 
@@ -136,6 +135,7 @@ footer {
 }
 .titulo {
     grid-area: titulo;
+    background-image: radial-gradient(black 50% , red 60%);
 }
 .video {
     grid-area: video;
@@ -171,6 +171,7 @@ footer {
 }
 .titulo {
     grid-area: titulo;
+    
 }
 .tablas {
     grid-area: tablas;
@@ -211,6 +212,7 @@ footer {
     background-color: rgb(145, 0, 0);
     width: 100%;
     align-items: center;
+    background-image: linear-gradient(red 80% , black 20% );
 }
 .generoContacto {
     text-align: center;
@@ -471,7 +473,13 @@ footer {
         justify-content: end;
     }
 }
-
+/*transformaciones animaciones etc*/
+.gradLineal {
+    background-image: linear-gradient(to bottom , black 30%, red 80% );
+}
+.gradRadial {
+    background-image: radial-gradient(black 30% , red 60%);
+}
 
 
 
